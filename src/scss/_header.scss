@@ -11,7 +11,19 @@
     height: $header-height;
     border-bottom: 3px solid hsl(var(--bg-color-hue), 50%, 30%);
 
-    h1 {
+    .logo {
+        font-size: 20px;
         color: var(--font-color-header);
+        text-decoration: none;
+    }
+
+    .theme-switch {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            list-style: none;
+        }
     }
 }

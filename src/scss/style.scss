@@ -36,6 +36,10 @@ h1 {
     }
 }
 
+button {
+    padding: 2px 15px;
+}
+
 .container {
     padding: 0 15px;
 }
@@ -49,6 +53,32 @@ h1 {
 
     @media (min-width: $tablet-size) {
         padding-bottom: 60px;
+    }
+}
+
+.only-mobile {
+    @media (min-width: $tablet-size) {
+        display: none;
+    }
+}
+
+.only-tablet {
+    display: none;
+
+    @media (min-width: $tablet-size) {
+        display: block;
+    }
+
+    @media (min-width: $desktop-size) {
+        display: none;
+    }
+}
+
+.only-desk {
+    display: none;
+
+    @media (min-width: $desktop-size) {
+        display: block;
     }
 }
 

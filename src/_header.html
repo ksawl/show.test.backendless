@@ -1,7 +1,40 @@
 <header class="header container">
-    <h1>Backendless</h1>
-    
-    <nav>
+    <a href="/" class="logo">Backendless</a>
 
+    <nav class="theme-switch">
+        <ul>
+            <li class="only-mobile">
+                <select class="select-switch">
+                    <option value="light" selected>Light Theme</option>
+                    <option value="dark">Dark Theme</option>
+                    <option value="dimmed">Backendless Theme</option>
+                </select>
+            </li>
+
+            <li class="only-tablet">
+                <button class="button-switch" value="light">Light Theme</button>
+            </li>
+            <li class="only-tablet">
+                <button class="button-switch" value="dark">Dark Theme</button>
+            </li>
+            <li class="only-tablet">
+                <button class="button-switch" value="dimmed">
+                    Backendless Theme
+                </button>
+            </li>
+
+            <li class="only-desk">
+                <input type="radio" name="radio-switch" value="light" checked />
+                Light Theme
+            </li>
+            <li class="only-desk">
+                <input type="radio" name="radio-switch" value="dark" /> Dark
+                Theme
+            </li>
+            <li class="only-desk">
+                <input type="radio" name="radio-switch" value="dimmed" />
+                Backendless Theme
+            </li>
+        </ul>
     </nav>
 </header>
