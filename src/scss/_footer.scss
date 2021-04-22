@@ -15,7 +15,6 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 10px;
-            padding: 0 5px;
             list-style: none;
 
             a {
@@ -30,14 +29,44 @@
             display: flex;
             justify-content: space-between;
             align-items: stretch;
+            gap: 10px;
             list-style: none;
 
             a {
                 display: flex;
-                width: 40px;
-                height: 40px;
-                padding: 0 5px;
+                width: 35px;
+                height: 35px;
                 color: var(--icon-color-footer);
+            }
+        }
+    }
+
+    @media (min-width: $tablet-size) {
+        padding: 5px 0;
+
+        .footer-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0 15px;
+        }
+
+        .contacts {
+            ul {
+                gap: 25px;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @media (min-width: $desktop-size) {
+        .social-links {
+            ul {
+                a {
+                    width: 30px;
+                    height: 30px;
+                }
             }
         }
     }
