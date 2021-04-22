@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Backendless Gallery</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gulp-Fls</title>
+        <link rel="stylesheet" href="./css/style.min.css" />
+        <script src="./js/script.min.js" defer></script>
+    </head>
 
-    <link rel="stylesheet" href="css/style.min.css">
-</head>
+    <body>
+        @@include('_header.html')
 
-<body>
-    @@include('_header.html')
+        <main class="main">
+            <article class="gallery container">
+                <h1>Backendless Gallery</h1>
 
-    <main class="main">
+                <section class="gallery-list">
+                    <img src="./static/images/1000x600.png" alt="">
+                    <img src="./static/images/1000x600.png" alt="">
+                    <img src="./static/images/1000x600.png" alt="">
+                    <img src="./static/images/1000x600.png" alt="">
+                    <img src="./static/images/1000x600.png" alt="">
+                    <img src="./static/images/1000x600.png" alt="">
+                    <img src="./static/images/1000x600.png" alt="">
+                    <img src="./static/images/1000x600.png" alt="">
+                    <img src="./static/images/1000x600.png" alt="">
+                    <img src="./static/images/1000x600.png" alt="">
+                    <img src="./static/images/1000x600.png" alt="">
+                    <img src="./static/images/1000x600.png" alt="">
+                    <img src="./static/images/1000x600.png" alt="">
+                </section>
+            </article>
+        </main>
 
-    </main>
-
-    <script src="js/script.min.js"></script>
-</body>
-
+        @@include('_footer.html')
+    </body>
 </html>
