@@ -3,5 +3,58 @@
 
     h1 {
         text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .gallery-list {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(3, 1fr);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        img:nth-child(4n + 1) {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        @media (min-width: $tablet-size) {
+            img:nth-child(4n + 1) {
+                grid-column-start: auto;
+                grid-column-end: auto;
+            }
+
+            img:nth-child(3n + 1) {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row: span 2;
+            }
+        }
+
+        @media (min-width: $desktop-size) {
+            grid-template-columns: repeat(4, 1fr);
+
+            img:nth-child(3n + 1) {
+                grid-column-start: auto;
+                grid-column-end: auto;
+                grid-row: auto;
+            }
+
+            img:nth-child(16n + 1) {
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row: span 3;
+            }
+
+            img:nth-child(16n + 10) {
+                grid-column-start: 2;
+                grid-column-end: 5;
+                grid-row: span 3;
+            }
+        }
     }
 }
