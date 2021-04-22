@@ -50,8 +50,8 @@ let path = {
         img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
         fonts: source_folder + "/fonts/*.ttf",
         vendor: source_folder + "/vendor/**/*.*",
-        static: source_folder + "/.static/**/*.*",
-        legacy: source_folder + "/.legacy/**/*.*",
+        static: source_folder + "/static/**/*.*",
+        legacy: source_folder + "/legacy/**/*.*",
     },
     watch: {
         html: source_folder + "/**/*.html",
