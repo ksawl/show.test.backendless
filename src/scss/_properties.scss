@@ -1,6 +1,41 @@
 :root {
-    --bg-color-hue: 180;
-    --font-color-header: #fff;
-    --icon-color-footer: #000;
-    --font-color-footer: #000;
+    --main-bg-color: hsl(220, 75%, 88%);
+    --main-font-color: hsl(220, 50%, 15%);
+    --header-bg-color: hsl(220, 60%, 70%);
+    --header-border-color: hsl(220, 50%, 30%);
+    --header-font-color: hsl(220, 50%, 15%);
+    --footer-bg-color: hsl(220, 88%, 60%);
+    --footer-border-color: hsl(220, 50%, 30%);
+    --footer-font-color: hsl(220, 50%, 15%);
+    --footer-font-hover-color: hsl(220, 70%, 85%);
+    --button-active-color: hsl(220, 88%, 85%);
+    --button-active-font-color: hsl(220, 50%, 15%);
+}
+
+:root[theme='dark'] {
+    --main-bg-color: hsl(220, 75%, 15%);
+    --main-font-color: hsl(220, 50%, 85%);
+    --header-bg-color: hsl(220, 88%, 5%);
+    --header-border-color: hsl(220, 50%, 25%);
+    --header-font-color: hsl(220, 50%, 85%);
+    --footer-bg-color: hsl(220, 88%, 5%);
+    --footer-border-color: hsl(220, 50%, 25%);
+    --footer-font-color: hsl(220, 50%, 85%);
+    --footer-font-hover-color: hsl(220, 50%, 55%);
+    --button-active-color: hsl(220, 50%, 55%);
+    --button-active-font-color: hsl(220, 50%, 85%);
+}
+
+:root[theme='dimmed'] {
+    --main-bg-color: hsl(220, 35%, 25%);
+    --main-font-color: hsl(220, 50%, 85%);
+    --header-bg-color: hsl(220, 68%, 15%);
+    --header-border-color: hsl(220, 30%, 35%);
+    --header-font-color: hsl(220, 50%, 85%);
+    --footer-bg-color: hsl(220, 68%, 15%);
+    --footer-border-color: hsl(220, 30%, 35%);
+    --footer-font-color: hsl(220, 50%, 85%);
+    --footer-font-hover-color: hsl(220, 30%, 65%);
+    --button-active-color: hsl(220, 30%, 65%);
+    --button-active-font-color: hsl(220, 40%, 15%);
 }

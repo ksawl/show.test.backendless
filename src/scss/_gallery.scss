@@ -1,9 +1,10 @@
 .gallery {
     overflow: hidden;
-    
+
     h1 {
-        text-align: center;
         margin: 15px 0;
+        color: var(--main-font-color);
+        text-align: center;
     }
 
     .gallery-list {

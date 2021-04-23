@@ -7,13 +7,13 @@
     left: 0;
     right: 0;
     z-index: 100;
-    background-color: hsl(var(--bg-color-hue), 50%, 50%);
+    background-color: var(--header-bg-color);
     height: $header-height;
-    border-bottom: 3px solid hsl(var(--bg-color-hue), 50%, 30%);
+    border-bottom: 3px solid var(--header-border-color);
 
     .logo {
         font-size: 20px;
-        color: var(--font-color-header);
+        color: var(--header-font-color);
         text-decoration: none;
     }
 
@@ -24,6 +24,7 @@
             align-items: center;
             gap: 15px;
             list-style: none;
+            color: var(--header-font-color);
         }
     }
 }

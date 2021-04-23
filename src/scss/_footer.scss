@@ -6,8 +6,8 @@
     z-index: 100;
     display: flex;
     justify-content: center;
-    background-color: hsl(var(--bg-color-hue), 50%, 50%);
-    border-top: 3px solid hsl(var(--bg-color-hue), 50%, 30%);
+    background-color: var(--footer-bg-color);
+    border-top: 3px solid var(--footer-border-color);
     padding: 10px 0;
 
     .contacts {
@@ -19,7 +19,11 @@
 
             a {
                 font-family: 'Robotobold';
-                color: var(--font-color-footer);
+                color: var(--footer-font-color);
+
+                &:hover {
+                    color: var(--footer-font-hover-color);
+                }
             }
         }
     }
@@ -36,7 +40,11 @@
                 display: flex;
                 width: 35px;
                 height: 35px;
-                color: var(--icon-color-footer);
+                color: var(--footer-font-color);
+
+                &:hover {
+                    color: var(--footer-font-hover-color);
+                }
             }
         }
     }
