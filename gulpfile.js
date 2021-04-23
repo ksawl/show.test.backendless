@@ -86,7 +86,7 @@ function html() {
     return (
         src(path.src.html)
             .pipe(fileinclude())
-            .pipe(gulp_replace('<base href="/">', replace_basehref()))
+            .pipe(gulp_replace('<base href="/" />', replace_basehref()))
             /** .pipe(webphtml()) */
             .pipe(dest(path.build.html))
             .pipe(browsersync.stream())
