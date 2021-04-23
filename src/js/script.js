@@ -1,3 +1,1 @@
-// import { showAlert } from "./_alert";
-
-// showAlert();
+import './_themeSwitch';
