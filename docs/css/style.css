@@ -295,6 +295,7 @@ label {
   background-color: transparent;
   width: 35px;
   height: 35px;
+  border: none;
 }
 
 .modal .modal-hide::after {
